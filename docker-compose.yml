@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  db:
+    container_name: "db_api_manager_f1"
+    image: postgres:14.1
+    hostname: postgres
+    ports:
+      - 5432:5432
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password1234
