@@ -1,0 +1,34 @@
+{
+  "name": "test_prisma_managerf1",
+  "version": "1.0.0",
+  "description": "F1 team manager to test Prisma",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --es-module-specifier-resolution=node app.js",
+    "dev": "nodemon --es-module-specifier-resolution=node app.js",
+    "test:unit": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "test:integration": "NODE_OPTIONS=--experimental-vm-modules jest ./test/integration --runInBand --testMatch **/*.spec.js --config ./test/integration/jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbully/test_Prisma_ManagerF1.git"
+  },
+  "author": "sbully",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbully/test_Prisma_ManagerF1/issues"
+  },
+  "homepage": "https://github.com/sbully/test_Prisma_ManagerF1#readme",
+  "dependencies": {
+    "@prisma/client": "^3.8.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "winston": "^3.4.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "prisma": "^3.8.1"
+  }
+}
