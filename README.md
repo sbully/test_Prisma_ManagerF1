@@ -4,9 +4,9 @@
 
 `npm install`
 
-## database création:
+## create database:
 
-Must have docker installed and run
+Must have docker installed and run  
 `docker-compose up`
 
 # Prisma action
