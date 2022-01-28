@@ -1,8 +1,8 @@
 -- CreateTable
 CREATE TABLE "Team" (
     "id" SERIAL NOT NULL,
-    "name" TEXT,
-    "country" TEXT,
+    "name" TEXT NOT NULL,
+    "country" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 

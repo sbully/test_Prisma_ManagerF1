@@ -4,7 +4,7 @@ CREATE TABLE "Driver" (
     "firstName" TEXT NOT NULL,
     "lastName" TEXT NOT NULL,
     "carNumber" INTEGER,
-    "teamId" INTEGER NOT NULL,
+    "teamId" INTEGER,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
@@ -12,4 +12,4 @@ CREATE TABLE "Driver" (
 );
 
 -- AddForeignKey
-ALTER TABLE "Driver" ADD CONSTRAINT "Driver_teamId_fkey" FOREIGN KEY ("teamId") REFERENCES "Team"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "Driver" ADD CONSTRAINT "Driver_teamId_fkey" FOREIGN KEY ("teamId") REFERENCES "Team"("id") ON DELETE SET NULL ON UPDATE CASCADE;
