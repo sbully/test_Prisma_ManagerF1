@@ -10,6 +10,9 @@
     "test:unit": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
     "test:integration": "NODE_OPTIONS=--experimental-vm-modules jest ./test/integration --runInBand --testMatch **/*.spec.js --config ./test/integration/jest.config.js"
   },
+  "prisma": {
+    "seed": "node --es-module-specifier-resolution=node prisma/seed.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sbully/test_Prisma_ManagerF1.git"
